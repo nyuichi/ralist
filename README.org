@@ -6,22 +6,22 @@
   Likewise, every time taking the head or tail of a list you have to make sure that it is not empty.
   Since this data structure is purely functional, all operations are done without chaning any part of the existing data.
 
-  HowToUse:
+** HowToUse:
   Just include ralist.h.
 
-  APIs:
-  - RandomAccessList<T>()
+** APIs:
+  - RandomAccessList<T>() ::
     constructor
-  - const RandomAccessList<T> *cons(T x) const
+  - const RandomAccessList<T> *cons(T x) const ::
     Returns a newly allocated RandomAccessList. This operation takes O(1) time.
-  - T lookup(size_t i) const
+  - T lookup(size_t i) const ::
     Returns the value at i. Please verify i is in the range of the list before call. This operation takes O(logn) time.
-  - const RandomAccessList<T> *update(size_t i, T y) const
+  - const RandomAccessList<T> *update(size_t i, T y) const ::
     Returns a list whose value at i has been replaced by y. This operation takes O(logn) time both in average and in the worst case.
-  - bool is_empty() const
+  - bool is_empty() const ::
     Complexity: O(1).
-  - T head() const
+  - T head() const ::
     Complexity: O(1).
-  - const RandomAccessList<T> *tail() const
+  - const RandomAccessList<T> *tail() const ::
     Complexity: O(1).
 
